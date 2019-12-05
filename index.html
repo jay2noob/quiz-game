@@ -8,26 +8,27 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
 </head>
 <body>
     <div class="container">
-        <div class="question hide">
-            <div class="questions">Question</div>
-            <div class="answers">
-                <button>Answer 1</button>
-                <button>Answer 2</button>
-                <button>Answer 3</button>
-                <button>Answer 4</button>
+        <div id="quiz" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-btns" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
             </div>
-            <div class="score">Score: <span>0</span></div>
-            <div class="timer">Time: <span>5:00</span></div>
         </div>
-        <div>
-            <button class="start-btn">Start</button>
+        <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
     </div>
-
+        <div id="score">Score: <span id="points">0</span></div>
+        <div id="time">Time Remaining: <span id="timer">75</span></div>
+        
     <script rel="text/javascript" src="script.js"></script>
     <script rel="text/javascript" src="questions.js"></script>
 </body>
