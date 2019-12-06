@@ -1,4 +1,4 @@
-/*var questions = [
+const questions = [
     {
         title: "Commonly used data types DO NOT include:",
         choices: ["strings", "booleans", "alerts", "numbers"],
@@ -8,4 +8,6 @@
         title: "The condition in an if / else statement is enclosed within____.",
         choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
         answer: "parentheses"
-    }]*/
+    }]
+
+    
